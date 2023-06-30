@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de figuras geométricas</h1>
+        <p>Esta calculadora de formas geométricas retorna a área do quadrado, círculo e triângulo retângulo.</p>
+    </header>
+
+    <form>
+        <h2>Menu inicial:</h2>
+        <div>
+            <label for="calcular__area">Selecione a figura geométrica:</label>
+        </div>
+        <select name="select">
+            <option value="triangulo_retangulo" selected>Calcular Área do Triângulo Retângulo</option>
+            <option value="circulo">Calcular Área do Círculo</option>
+            <option value="quadrado">Calcular Área do Quadrado</option>
+          </select>
+              <button class="btn_confirmar" onclick="confirmar()">Confirmar Figura</button>
+        </form>
+        <br><br>
+        <fieldset>
+            <div class="calcular__trianguloretangulo">
+                <p>Triângulo retângulo</p>
+                <label for="Digite">Digite a base:</label>
+                <input type="number" placeholder="metros">
+                <label for="">Digite a altura:</label>
+                <input type="number" placeholder="metros">
+                <label for="" >Digite a Profundidade:</label>
+                <input type="number" placeholder="metros">
+            </div>
+            
+            <div class="calcular__circulo">
+                <p>Círculo</p>
+                <label for="">Digite o raio:</label>
+                <input type="number" placeholder="metros">
+            </div>
+
+            <div class="calcular__quadrado">
+                <p>Quadrado</p>
+                <label for="Digite">Digite a base:</label>
+                <input type="number" placeholder="metros">
+                <label for="">Digite a altura:</label>
+                <input type="number" placeholder="metros">
+                <label for="" >Digite a Profundidade:</label>
+                <input type="number" placeholder="metros">
+            </div>
+            <br>
+            <div>
+                <button class="btn_calcular" onclick="calcularArea()">Realizar Cálculo de Área</button>
+            </div>
+        </fieldset>
+        
+
+        <div class="resultado">
+            <p>O resultado é: </p>
+        </div>
+
+    
+    <script src="/js/app.js"></script>
+</body>
+</html>
