@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    text-align: center;
+    color:aliceblue;
+    background-color: rgb(196, 99, 99);
+    
+}
+
+.figuras{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn_limpar {
+    text-align: center;
+}
