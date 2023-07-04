@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-</head>
-<body>
-    <header>
+  </head>
+  <body>
+    <main>
+      <header>
         <h1>Calculadora de figuras geométricas</h1>
-        <p>Esta calculadora de formas geométricas retorna a área do quadrado, círculo e triângulo retângulo.</p>
-    </header>
+        <p>
+          Esta calculadora de formas geométricas retorna a área do quadrado,
+          círculo e triângulo retângulo.
+        </p>
+      </header>
 
-    <form>
+
         <h2>Menu inicial:</h2>
         <div>
-            <label for="calcular__area">Selecione a figura geométrica:</label>
+          <label for="calcular__area">Selecione a figura geométrica:</label>
         </div>
-        <select name="select">
-            <option value="triangulo_retangulo" selected>Calcular Área do Triângulo Retângulo</option>
-            <option value="circulo">Calcular Área do Círculo</option>
-            <option value="quadrado">Calcular Área do Quadrado</option>
-          </select>
-              <button class="btn_confirmar" onclick="confirmar()">Confirmar Figura</button>
-        </form>
+        <select id="select" onchange="selecionarOpcoes()">
+          <option value="" selected>Selecione uma opção</option>
+          <option value="triangulo_retangulo">
+            Calcular Área do Triângulo Retângulo
+          </option>
+          <option value="circulo">Calcular Área do Círculo</option>
+          <option value="quadrado">Calcular Área do Quadrado</option>
+        </select>
         <br><br>
-        <fieldset>
-            <div class="calcular__trianguloretangulo">
-                <p>Triângulo retângulo</p>
-                <label for="Digite">Digite a base:</label>
-                <input type="number" placeholder="metros">
-                <label for="">Digite a altura:</label>
-                <input type="number" placeholder="metros">
-                <label for="" >Digite a Profundidade:</label>
-                <input type="number" placeholder="metros">
-            </div>
-            
-            <div class="calcular__circulo">
-                <p>Círculo</p>
-                <label for="">Digite o raio:</label>
-                <input type="number" placeholder="metros">
-            </div>
-
-            <div class="calcular__quadrado">
-                <p>Quadrado</p>
-                <label for="Digite">Digite a base:</label>
-                <input type="number" placeholder="metros">
-                <label for="">Digite a altura:</label>
-                <input type="number" placeholder="metros">
-                <label for="" >Digite a Profundidade:</label>
-                <input type="number" placeholder="metros">
-            </div>
-            <br>
-            <div>
-                <button class="btn_calcular" onclick="calcularArea()">Realizar Cálculo de Área</button>
-            </div>
-        </fieldset>
         
+      
 
-        <div class="resultado">
-            <p>O resultado é: </p>
-        </div>
+      <div id="calcular__trianguloretangulo">
+        <p>Triângulo retângulo</p>
+        <label for="base__ret">Digite o valor da base:</label>
+        <input type="number" id="base__ret" name="" placeholder="metros" />
+        <label for="altura__ret">Digite o valor da altura:</label>
+        <input type="number" id="altura__ret" placeholder="metros" />
+      </div>
 
-    
-    <script src="/js/app.js"></script>
-</body>
+      <div id="calcular__circulo">
+        <p>Círculo</p>
+        <label for="raio">Digite o valor do raio:</label>
+        <input type="number" id="raio" placeholder="metros" />
+      </div>
+
+      <div id="calcular__quadrado">
+        <p>Quadrado</p>
+        <label for="lado__qud">Digite o valor do lado:</label>
+        <input type="number" id="lado" placeholder="metros" />
+      </div>
+      <br />
+      <div>
+        <button id="btn_calcular" onclick="calcular()">
+          Calcular
+        </button>
+      </div>
+      <div>
+        <button id="btn_limpar" onclick="limpar()">Limpar</button>
+      </div>
+     
+      <div>
+        <p class="texto"><span id="resultado"></span></p>
+      </div>
+      
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
