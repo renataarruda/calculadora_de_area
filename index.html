@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
     <title>Calculadora</title>
   </head>
   <body>
@@ -10,63 +11,67 @@
       <header>
         <h1>Calculadora de figuras geométricas</h1>
         <p>
-          Esta calculadora de formas geométricas retorna a área do quadrado,
+          Esta calculadora de formas geométricas retorna as áreas do quadrado,
           círculo e triângulo retângulo.
         </p>
       </header>
 
+        <section>
+          <h2>Escolha a figura desejada:</h2>
+          <div>
+            <label for="calcular__area"></label>
+          </div>
 
-        <h2>Menu inicial:</h2>
-        <div>
-          <label for="calcular__area">Selecione a figura geométrica:</label>
+        <section class="figuras">
+          <div id="calcular__trianguloretangulo" value="triangulo_retangulo">
+            <p>Triângulo retângulo</p>
+            <div>
+              <label for="base__ret">Base:</label>
+            <input type="number" id="base__ret" name="" placeholder="metros" />
+            </div>
+            <div>
+            <label for="altura__ret">Altura:</label>
+            <input type="number" id="altura__ret" placeholder="metros" />
+            </div>
+            
+            <div>
+              <button id="btn_calcular" onclick="calcularTriangulo()">Calcular</button>
+            </div>
+              
+            
+          </div>
+
+          <div id="calcular__circulo" value="circulo">
+            <p>Círculo</p>
+            <label for="raio">Raio:</label>
+            <input type="number" id="raio" placeholder="metros" />
+
+            <div>
+              <button id="btn_calcular" onclick="calcularCirculo()">Calcular</button>
+            </div>
+              
+
+          </div>
+
+          <div id="calcular__quadrado" value="quadrado">
+            <p>Quadrado</p>
+            <label for="lado__qud">Lado:</label>
+            <input type="number" id="lado" placeholder="metros" />
+          
+            <div>
+              <button id="btn_calcular" onclick="calcularQuadrado()">Calcular</button>
+            
+            </div>
+            
+          </div>
+        </section>
+
+        <div class="btn_limpar">
+          <button class="btn_limpar" onclick="limpar()">Limpar</button>
         </div>
-        <select id="select" onchange="selecionarOpcoes()">
-          <option value="" selected>Selecione uma opção</option>
-          <option value="triangulo_retangulo">
-            Calcular Área do Triângulo Retângulo
-          </option>
-          <option value="circulo">Calcular Área do Círculo</option>
-          <option value="quadrado">Calcular Área do Quadrado</option>
-        </select>
-        <br><br>
-        
-      
-
-      <div id="calcular__trianguloretangulo">
-        <p>Triângulo retângulo</p>
-        <label for="base__ret">Digite o valor da base:</label>
-        <input type="number" id="base__ret" name="" placeholder="metros" />
-        <label for="altura__ret">Digite o valor da altura:</label>
-        <input type="number" id="altura__ret" placeholder="metros" />
-      </div>
-
-      <div id="calcular__circulo">
-        <p>Círculo</p>
-        <label for="raio">Digite o valor do raio:</label>
-        <input type="number" id="raio" placeholder="metros" />
-      </div>
-
-      <div id="calcular__quadrado">
-        <p>Quadrado</p>
-        <label for="lado__qud">Digite o valor do lado:</label>
-        <input type="number" id="lado" placeholder="metros" />
-      </div>
-      <br />
-      <div>
-        <button id="btn_calcular" onclick="calcular()">
-          Calcular
-        </button>
-      </div>
-      <div>
-        <button id="btn_limpar" onclick="limpar()">Limpar</button>
-      </div>
-     
-      <div>
-        <p class="texto"><span id="resultado"></span></p>
-      </div>
-      
+            <p class="texto"><span id="resultado"></span></p>
     </main>
 
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
