@@ -39,18 +39,32 @@ h2 {
     justify-content:space-evenly;
 }
 
-.figuras p {
+.figuras .titulo_figura{
     text-transform: uppercase;
     font-weight: 600;
-    padding: 5px 10px;
+    padding: 2px 10px;
+    margin-bottom: 15px;
+}
+
+.figuras .texto{
+    font-weight: 600;
+    margin-top: 5px;
 }
 
 .figuras #calcular__circulo input{
-    margin-top: 18px;
+    margin-top: 20px;
+}
+
+.figuras #calcular__quadrado input{
+    margin-top: 10px;
 }
 
 .figuras #btn_calcular_raio, #btn_calcular_quadrado{
-    margin-top: 20px;
+    margin-top: 35px;
+}
+
+.figuras #btn_calcular_triangulo {
+    margin-top: 22.5px;
 }
 
 #calcular__trianguloretangulo, #calcular__quadrado {
@@ -63,4 +77,13 @@ h2 {
     border: 1px solid;
     border-radius: 5%;
     padding: 20px 20px;
+}
+
+button {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 5px 8px;
+    background-color: #fbbd10;
+    color: #fff;
+    border: none;
 }
