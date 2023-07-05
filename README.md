@@ -27,6 +27,6 @@ Sempre que o usuário quiser realizar novos os cálculos, basta selecionar o Lab
 
 Inicialmente, foi testada a tag ```select``` no HTML para o criar uma lista no menu de opções. A ideia seria deixar os elementos escondidos na tela para que aparecessem apenas depois que a opção desejada fosse selecionada pelo usuário. No Javascript, testei a criação de uma função ```calcular()```, que agrupasse os cálculos correspondentes a cada figura.
 
-Com o desenvolvimento, encontrei alguns desafios durante a manipulação da lista, que geravam vários bugs no momento de fazer os cálculos. Por uma questão de tempo, resolvi optar por uma solução mais simples, removendo o ```Menu de Opções``` e deixando cada figura com seu respectivo botão de cálculo.
+Com o desenvolvimento, encontrei alguns desafios durante a manipulação da lista, que geravam vários bugs no momento de fazer os cálculos. Por uma questão de tempo, resolvi optar por uma solução mais simples, removendo o ```Menu de Opções``` e deixando cada figura com seu respectivo botão de ```calcular``` e ```limpar```.
 
-A ideia é implementar melhorias neste projeto ao longo do tempo, para que fique mais próximo do objetivo inicial.
+A ideia é implementar melhorias neste projeto ao longo do tempo, para que se aproxime do objetivo inicial.
