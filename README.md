@@ -1,4 +1,4 @@
-# Calculadora de formas geométricas
+# Calculadora de área de figuras geométricas
 
 Projeto realizado para o desafio final do primeiro semestre do curso de Sistemas de Informação da Faculdade XP Educação - IGTI.
 
@@ -34,3 +34,6 @@ Inicialmente, foi testada a tag ```select``` no HTML para o criar uma lista no m
 Com o desenvolvimento, encontrei alguns desafios durante a manipulação da lista, que geravam vários bugs no momento de fazer os cálculos. Por uma questão de tempo, resolvi optar por uma solução mais simples, removendo o ```Menu de Opções``` e deixando cada figura com seu respectivo botão de ```calcular``` e ```limpar```.
 
 A ideia é implementar melhorias neste projeto ao longo do tempo, para que se aproxime do objetivo inicial.
+
+[screen-capture.webm](https://github.com/renataarruda/calculadora_de_area/assets/91355221/bc476bae-ff4b-4ba8-9f13-4bf143dca88e)
+
