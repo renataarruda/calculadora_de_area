@@ -11,20 +11,20 @@
       <header>
         <h1>Calculadora de áreas</h1>
         <p>
-          Esta calculadora de formas geométricas retorna as áreas do quadrado,
+          Esta calculadora retorna as áreas do quadrado,
           círculo e triângulo retângulo
         </p>
       </header>
 
         <section>
-          <h2>Escolha a figura desejada:</h2>
+          <h2>Calcule a área da figura desejada:</h2>
           <div>
             <label for="calcular__area"></label>
           </div>
 
         <section class="figuras">
           <div id="calcular__trianguloretangulo" value="triangulo_retangulo">
-            <p>Triângulo retângulo</p>
+            <p class="titulo_figura">Triângulo retângulo</p>
             <img src="/assets/trianguloretangulo.png" width="150px" height="150px" alt="Imagem de um triângulo retângulo azul escuro"/>
             <div>
               <label for="base__ret"></label>
@@ -38,12 +38,13 @@
             <div>
               <button id="btn_calcular_triangulo" onclick="calcularTriangulo()">Calcular</button>
               <button class="limpar_tri" onclick="limparTriangulo()">Limpar</button>
+              <p class="texto"><span id="resultado_tri"></span></p>
             </div> 
           </div>
 
           <div id="calcular__circulo" value="circulo">
-            <p>Círculo</p>
-            <img src="/assets/circulo.png" width="150px" height="150px" alt="Imagem de círculo"/>
+            <p class="titulo_figura">Círculo</p>
+            <img src="/assets/circulo.png" width="155px" height="155px" alt="Imagem de círculo"/>
 
             <div>
               <label for="raio"></label>
@@ -53,11 +54,12 @@
             <div>
               <button id="btn_calcular_raio" onclick="calcularCirculo()">Calcular</button>
               <button class="limpar_raio" onclick="limparCirculo()">Limpar</button>
+              <p class="texto"><span id="resultado_raio"></span></p>
             </div>
           </div>
 
           <div id="calcular__quadrado" value="quadrado">
-            <p>Quadrado</p>
+            <p class="titulo_figura">Quadrado</p>
             <img src="/assets/quadrado.png" width="165px" height="165px" alt="Imagem de um quadrado verde"/>
             
             <div>
@@ -68,9 +70,9 @@
             <div>
               <button id="btn_calcular_quadrado" onclick="calcularQuadrado()">Calcular</button>
               <button class="limpar_qd" onclick="limparQuadrado()">Limpar</button>
+              <p class="texto"><span id="resultado_qd"></span></p>
             </div>
         </section>
-         <p class="texto"><span id="resultado"></span></p>
             
     </main>
 
