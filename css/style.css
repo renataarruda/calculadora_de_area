@@ -7,17 +7,71 @@
 
 body {
     text-align: center;
-    color:aliceblue;
-    background-color: rgb(196, 99, 99);
-    
+    color:#fbbd10;
+    background-color: floralwhite;
+    font-size: 15px;
+    line-height: 2.2em;
+}
+
+header {
+   background-color:#fbbd10;
+   color: white;
+   padding: 20px;
+   font-size: 20px;
+}
+
+h1{
+    margin-top: 15px;
+    padding-bottom: 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin: 50px 50px;
+    padding: 20px auto;
+    text-transform: uppercase;
 }
 
 .figuras{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.figuras p {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+.figuras #calcular__circulo input{
+    margin-top: 20px;
+}
+
+.figuras #btn_calcular_raio, #btn_calcular_quadrado{
+    margin-top: 20px;
 }
 
 .btn_limpar {
     text-align: center;
+}
+
+.limpar {
+    margin-top: 40px;
+    padding: 10px 10px;
+    background-color: #fbbd10;
+    color: #fff;
+}
+
+#calcular__trianguloretangulo, #calcular__quadrado {
+    border: 1px solid;
+    border-radius: 5%;
+    padding: 20px 20px;
+}
+
+#calcular__circulo {
+    border: 1px solid;
+    border-radius: 5%;
+    padding: 20px 20px;
 }
