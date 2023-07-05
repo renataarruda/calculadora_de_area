@@ -9,10 +9,10 @@
   <body>
     <main>
       <header>
-        <h1>Calculadora de figuras geométricas</h1>
+        <h1>Calculadora de áreas</h1>
         <p>
           Esta calculadora de formas geométricas retorna as áreas do quadrado,
-          círculo e triângulo retângulo.
+          círculo e triângulo retângulo
         </p>
       </header>
 
@@ -25,51 +25,55 @@
         <section class="figuras">
           <div id="calcular__trianguloretangulo" value="triangulo_retangulo">
             <p>Triângulo retângulo</p>
+            <img src="/assets/trianguloretangulo.png" width="150px" height="150px" alt="Imagem de um triângulo retângulo azul escuro"/>
             <div>
-              <label for="base__ret">Base:</label>
-            <input type="number" id="base__ret" name="" placeholder="metros" />
+              <label for="base__ret"></label>
+            <input type="number" id="base__ret" name="" placeholder="Base em metros" />
             </div>
             <div>
-            <label for="altura__ret">Altura:</label>
-            <input type="number" id="altura__ret" placeholder="metros" />
+            <label for="altura__ret"></label>
+            <input type="number" id="altura__ret" placeholder="Altura em metros" />
             </div>
             
             <div>
-              <button id="btn_calcular" onclick="calcularTriangulo()">Calcular</button>
-            </div>
-              
-            
+              <button id="btn_calcular_triangulo" onclick="calcularTriangulo()">Calcular</button>
+            </div> 
           </div>
 
           <div id="calcular__circulo" value="circulo">
             <p>Círculo</p>
-            <label for="raio">Raio:</label>
-            <input type="number" id="raio" placeholder="metros" />
+            <img src="/assets/circulo.png" width="150px" height="150px" alt="Imagem de círculo"/>
 
             <div>
-              <button id="btn_calcular" onclick="calcularCirculo()">Calcular</button>
+              <label for="raio"></label>
+              <input type="number" id="raio" placeholder="Raio em metros" />
             </div>
-              
 
+            <div>
+              <button id="btn_calcular_raio" onclick="calcularCirculo()">Calcular</button>
+            </div>
           </div>
 
           <div id="calcular__quadrado" value="quadrado">
             <p>Quadrado</p>
-            <label for="lado__qud">Lado:</label>
-            <input type="number" id="lado" placeholder="metros" />
+            <img src="/assets/quadrado.png" width="165px" height="165px" alt="Imagem de um quadrado verde"/>
+            
+            <div>
+              <label for="lado__qud"></label>
+              <input type="number" id="lado" placeholder="Lado em metros" />
+            </div>
           
             <div>
-              <button id="btn_calcular" onclick="calcularQuadrado()">Calcular</button>
-            
+              <button id="btn_calcular_quadrado" onclick="calcularQuadrado()">Calcular</button>
             </div>
             
           </div>
         </section>
-
+         <p class="texto"><span id="resultado"></span></p>
         <div class="btn_limpar">
-          <button class="btn_limpar" onclick="limpar()">Limpar</button>
+          <button class="limpar" onclick="limpar()">Limpar campos</button>
         </div>
-            <p class="texto"><span id="resultado"></span></p>
+            
     </main>
 
     <script src="/js/script.js"></script>
