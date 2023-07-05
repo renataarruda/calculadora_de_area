@@ -46,22 +46,11 @@ h2 {
 }
 
 .figuras #calcular__circulo input{
-    margin-top: 20px;
+    margin-top: 18px;
 }
 
 .figuras #btn_calcular_raio, #btn_calcular_quadrado{
     margin-top: 20px;
-}
-
-.btn_limpar {
-    text-align: center;
-}
-
-.limpar {
-    margin-top: 40px;
-    padding: 10px 10px;
-    background-color: #fbbd10;
-    color: #fff;
 }
 
 #calcular__trianguloretangulo, #calcular__quadrado {
