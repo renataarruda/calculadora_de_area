@@ -13,9 +13,13 @@ Desenvolva uma página Web para calcular áreas de algumas figuras geométricas.
 Deve ser exibido um Menu Inicial com apresentação de Label para as seguintes opções:
 
 a. Calcular Área do Triângulo Retângulo;
+
 b. Calcular Área do Círculo;
+
 c. Calcular Área do Quadrado;
+
 d. Finalizar Programa.
+
 
 Logo após, deve haver no menu um botão confirmar; após o usuário selecionar um Label e clicar no botão “Confirmar Figura”, o programa deve apresentar alguns campos para que o usuário dê o input das informações necessárias para o cálculo (ex.: Digite a Altura do Quadrado). 
 
