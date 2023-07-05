@@ -1,4 +1,3 @@
-
 function calcularTriangulo() {
 
     let base = document.getElementById("base__ret");
@@ -23,22 +22,18 @@ function calcularCirculo() {
     resultado.textContent = `O resultado é ${calculo} m2.`
 }
 
-function limpar() {
+function limparTriangulo() {
+    document.getElementById("base__ret").value = '';
+    document.getElementById("altura__ret").value = '';
+    resultado.textContent = '';
+}
 
-    if (calcularTriangulo()) {
-        document.getElementById("base__ret").value = '';
-        document.getElementById("altura__ret").value = '';
-        resultado.textContent = '';
-    }
+function limparCirculo() {
+    document.getElementById("raio").value = '';
+    resultado.textContent = '';
+}
 
-    if (calcularCirculo()) {
-        document.getElementById("raio").value = '';
-        resultado.textContent = '';
-    }
-
-    if (calcularQuadrado) {
-        document.getElementById('lado').value = '';
-        resultado.textContent = '';
-    }
-
+function limparQuadrado() {
+    document.getElementById('lado').value = '';
+    resultado.textContent = '';
 }
